@@ -11,10 +11,9 @@ class SecondBranch extends Component {
           {name}
         </h2>
         {children.map(node => (
-          <ThirdBranch 
-            key={node.id}
-            name={node.name}
-          />
+          <ThirdBranch key={node.id}>
+            {node.name}
+          </ThirdBranch>
         ))}
       </div>
     );
