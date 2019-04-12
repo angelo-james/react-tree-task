@@ -9,9 +9,11 @@ class FirstBranch extends Component {
       onExpand(event.target.value);
     }
 
+    let toggleButtonColor = expanded ? "btn btn-primary mb-1" : "btn btn-dark mb-1";
+
     return (
       <div className="animated fadeIn card">
-        <button className="btn btn-primary mb-1" value={id} onClick={event => handleToggle(event)}>
+        <button className={toggleButtonColor} value={id} onClick={event => handleToggle(event)}>
           {name}
         </button>
         {expanded ? children.map(node => (
