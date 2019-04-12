@@ -196,6 +196,7 @@ class App extends Component {
         <h1>React Tree Component</h1>
         {this.state.data.map(node => (
           <FirstBranch 
+            key={node.id}
             name={node.name}
             children={node.children}
             expanded={node.expanded}
