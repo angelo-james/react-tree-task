@@ -190,6 +190,10 @@ class App extends Component {
     ],
   }
 
+  onExpand = (nodeData) => {
+    this.setState({ currentExpandedNode: nodeData });
+  }
+
   render() {
     return (
       <div>
@@ -200,6 +204,8 @@ class App extends Component {
             name={node.name}
             children={node.children}
             expanded={node.expanded}
+            onExpand={this.onExpand}
+            id={node.id}
           />
         ))}
       </div>
