@@ -188,6 +188,7 @@ class App extends Component {
         ]
       } 
     ],
+    currentExpandedNode: null
   }
 
   onExpand = (nodeData) => {
