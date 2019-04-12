@@ -2,9 +2,11 @@ import React, { Component } from 'react';
 
 class FirstBranch extends Component {
   render() {
+    let { name, children } = this.props;
+
     return (
       <h1>
-        FirstBranch Component
+        {name}
       </h1>
     );
   }
