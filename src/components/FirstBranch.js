@@ -7,9 +7,9 @@ class FirstBranch extends Component {
 
     return (
       <div>
-        <h1>
+        <button>
           {name}
-        </h1>
+        </button>
         {expanded ? children.map(node => (
           <SecondBranch 
             key={node.id}
