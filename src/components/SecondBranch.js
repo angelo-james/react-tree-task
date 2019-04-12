@@ -1,13 +1,21 @@
 import React, { Component } from 'react';
+import ThirdBranch from './ThirdBranch';
 
 class SecondBranch extends Component {
   render() {
     let {name, children} = this.props;
 
     return (
-      <h2>
-        {name}
-      </h2>
+      <div>
+        <h2>
+          {name}
+        </h2>
+        {children.map(node => (
+          <ThirdBranch 
+            name={node.name}
+          />
+        ))}
+      </div>
     );
   }
 }
