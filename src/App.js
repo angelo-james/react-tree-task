@@ -192,6 +192,15 @@ class App extends Component {
 
   onExpand = (nodeData) => {
     this.setState({ currentExpandedNode: nodeData });
+    this.onCollapse(nodeData);
+  }
+
+  onCollapse = (nodeData) => {
+    let newData = this.state.data.map(node => {
+      node.id === nodeData ? node.expanded = true : node.expanded = false;
+      return node;
+    })
+    this.setState({data: newData});
   }
 
   render() {
