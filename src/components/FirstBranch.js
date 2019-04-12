@@ -3,19 +3,19 @@ import SecondBranch from './SecondBranch';
 
 class FirstBranch extends Component {
   render() {
-    let { name, children } = this.props;
+    let { name, children, expanded } = this.props;
 
     return (
       <div>
         <h1>
           {name}
         </h1>
-        {children.map(node => (
+        {expanded ? children.map(node => (
           <SecondBranch 
             name={node.name}
             children={node.children}
           />
-        ))}
+        )) : null}
       </div>
     );
   }

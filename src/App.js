@@ -198,6 +198,7 @@ class App extends Component {
           <FirstBranch 
             name={node.name}
             children={node.children}
+            expanded={node.expanded}
           />
         ))}
       </div>
