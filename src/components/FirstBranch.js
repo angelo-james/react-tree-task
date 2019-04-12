@@ -3,11 +3,15 @@ import SecondBranch from './SecondBranch';
 
 class FirstBranch extends Component {
   render() {
-    let { name, children, expanded } = this.props;
+    let { name, children, expanded, onExpand, id } = this.props;
+
+    let handleToggle = (event) => {
+      onExpand(event.target.value);
+    }
 
     return (
       <div>
-        <button>
+        <button value={id} onClick={event => handleToggle(event)}>
           {name}
         </button>
         {expanded ? children.map(node => (
