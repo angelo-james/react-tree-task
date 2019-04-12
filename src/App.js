@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import FirstBranch from './components/FirstBranch';
 import './App.css';
 
 class App extends Component {
@@ -193,6 +194,12 @@ class App extends Component {
     return (
       <div>
         <h1>React Tree Component</h1>
+        {this.state.data.map(node => (
+          <FirstBranch 
+            name={node.name}
+            children={node.children}
+          />
+        ))}
       </div>
     );
   }
