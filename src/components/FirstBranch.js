@@ -10,8 +10,8 @@ class FirstBranch extends Component {
     }
 
     return (
-      <div>
-        <button value={id} onClick={event => handleToggle(event)}>
+      <div className="animated fadeIn card">
+        <button className="btn btn-primary mb-1" value={id} onClick={event => handleToggle(event)}>
           {name}
         </button>
         {expanded ? children.map(node => (

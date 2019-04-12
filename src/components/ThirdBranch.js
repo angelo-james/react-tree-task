@@ -2,9 +2,11 @@ import React from 'react';
 
 const ThirdBranch = props => {
   return (
-    <p>
-      {props.children}
-    </p>
+    <ul className="animated fadeIn list-group list-group-flush">
+      <li className="list-group-item">
+        {props.children}
+      </li>
+    </ul>
   );
 }
 

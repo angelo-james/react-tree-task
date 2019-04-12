@@ -1,0 +1,23 @@
+.header {
+  font-size: 2rem;
+  text-align: center;
+}
+h2 {
+  text-align: center;
+  font-size: 1rem;
+}
+.animated {
+  animation-duration: 1s;
+}
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+.fadeIn {
+  animation-name: fadeIn;
+}
+@media only screen and (min-width: 400px) {
+  .list {
+    width: 25rem;
+  }
+}

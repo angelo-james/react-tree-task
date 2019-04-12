@@ -206,8 +206,8 @@ class App extends Component {
 
   render() {
     return (
-      <div>
-        <h1>React Tree Component</h1>
+      <div className="list container">
+        <h1 className="header">React Tree Component</h1>
         {this.state.data.map(node => (
           <FirstBranch 
             key={node.id}

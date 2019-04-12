@@ -7,7 +7,7 @@ class SecondBranch extends Component {
 
     return (
       <div>
-        <h2>
+        <h2 className="card-header">
           {name}
         </h2>
         {children.map(node => (
