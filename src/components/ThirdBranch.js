@@ -1,15 +1,11 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class ThirdBranch extends Component {
-  render() {
-    let { name } = this.props;
-
-    return (
-      <p>
-        {name}
-      </p>
-    );
-  }
+const ThirdBranch = props => {
+  return (
+    <p>
+      {props.children}
+    </p>
+  );
 }
 
 export default ThirdBranch;
